@@ -15,7 +15,7 @@
 
 @font-face {
   font-family: 'WorkSans-Medium';
-  src: url('../fonts/WorkSans-Light.woff2') format('woff2');
+  src: url('../fonts/WorkSans-Medium.woff2') format('woff2');
   font-style: normal;
   font-weight: 500;
   font-display: swap;
@@ -23,7 +23,7 @@
 
 @font-face {
   font-family: 'WorkSans-Regular';
-  src: url('../fonts/WorkSans-Light.woff2') format('woff2');
+  src: url('../fonts/WorkSans-Regular.woff2') format('woff2');
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -31,14 +31,17 @@
 
 @font-face {
   font-family: 'WorkSans-SemiBold';
-  src: url('../fonts/WorkSans-Light.woff2') format('woff2');
+  src: url('../fonts/WorkSans-SemiBold.woff2') format('woff2');
   font-style: normal;
   font-weight: 600;
   font-display: swap;
 }
 
 body {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
   font-size: 16px;
+  line-height: 1.35;
   color: #0e0d0d;
   background-color: #fdfdf0;
 }
@@ -49,12 +52,17 @@ body {
   margin: 0 auto;
 }
 
+.container-big {
+  max-width: 1840px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
 .header__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px 0;
-  font-family: 'Nunito Sans', sans-serif;
   font-weight: 500;
 }
 
@@ -74,4 +82,174 @@ body {
   background-color: #0e0d0d;
   color: #ffffff;
   border-radius: 50px;
+}
+
+.about {
+  margin-bottom: 180px;
+}
+
+.about__top {
+  text-align: center;
+  color: #fdfdf0;
+  text-transform: uppercase;
+  background-image: url('../images/about-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 748px;
+}
+
+.about__title {
+  font-family: 'WorkSans-SemiBold', sans-serif;
+  font-weight: 600;
+  font-size: 250px;
+  line-height: 0.9;
+  padding-top: 85px;
+}
+
+.about__text {
+  font-family: 'WorkSans-Medium', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.about__achievements {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -55px;
+  margin-bottom: 90px;
+}
+
+.about__achievement {
+  border-radius: 20px;
+  background-color: #f4f4e7;
+  max-width: 580px;
+  padding: 14px 10px;
+  display: flex;
+  gap: 25px;
+}
+
+.about__achievement-imgbox {
+  min-width: 214px;
+  position: relative;
+}
+
+.about__achievement-arrow {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+
+.about__achievement-title {
+  margin-bottom: 20px;
+  font-weight: 500;
+  padding-top: 10px;
+  padding-right: 8px;
+}
+
+.about__achievement-text {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.text--bold {
+  font-weight: 600;
+}
+
+.text--color {
+  font-weight: 600;
+  color: #f2a531;
+}
+
+.about__stats {
+  border-radius: 20px;
+  background-color: #f4f4e7;
+  margin-bottom: 70px;
+  display: flex;
+  padding: 30px 18px;
+  justify-content: space-between;
+  gap: 90px;
+}
+
+.about__stats-item {
+  text-align: center;
+  width: 300px;
+}
+
+.about__stats-item dt {
+  font-family: 'WorkSans-SemiBold';
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.about__stats-item dd {
+  margin: 0;
+  color: #0e0d0d;
+  font-size: 22px;
+  opacity: 0.71;
+}
+
+.about__progress-text {
+  font-family: 'WorkSans-Light', sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+
+.about__progress-text span {
+  font-family: 'WorkSans-Medium', sans-serif;
+  font-weight: 500;
+}
+
+.about__progress-box {
+  display: flex;
+  gap: 0 140px;
+}
+
+.about__progress-textbox {
+  font-size: 18px;
+  margin-bottom: 45px;
+  padding-right: 50px;
+  line-height: 1.5;
+  padding-top: 5px;
+}
+
+.about__progress-textbox .text--bold {
+  font-weight: 700;
+}
+
+.about__progress-table {
+  border-top: 1px solid rgba(14, 14, 13, 0.23);
+}
+
+.about__progress-item {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(14, 14, 13, 0.23);
+}
+
+.about__progress-item + .about__progress-item {
+  padding-top: 20px;
+}
+
+.about__progress-item dt {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.about__progress-item dd {
+  opacity: 0.71;
+}
+
+.products__wrapper {
+  padding: 50px 0;
+  background-color: #f4f4e7;
+  border-radius: 20px;
 }
