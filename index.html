@@ -17,58 +17,62 @@
     />
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <a class="skip-link" href="#main">Skip to main content</a>
     <header class="header">
       <div class="container">
         <div class="header__inner">
           <a
             class="logo_link"
-            href="#"
+            href="#main"
+            aria-label="Agroton"
           >
             <img
-              class="logo__img"
-              src="./images/logo.png"
-              alt="Logo"
+            class="logo__img"
+            src="./images/logo.png"
+            alt=""
+            aria-hidden="true"
             />
           </a>
-          <nav class="menu">
-            <button class="menu__btn">
+          <nav class="menu" aria-label="Primary navigation">
+            <button class="menu__btn" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle menu">
               <span></span>
               <span></span>
               <span></span>
             </button>
-            <ul class="menu__list">
+            <ul id="primary-menu" class="menu__list">
               <li class="menu__items">
                 <a
                   class="menu__link"
-                  href="#"
+                  href="#about"
                   >About company</a
                 >
               </li>
               <li class="menu__items">
                 <a
                   class="menu__link"
-                  href="#"
+                  href="#products"
                   >Products</a
                 >
               </li>
               <li class="menu__items">
                 <a
                   class="menu__link"
-                  href="#"
+                  href="#partners"
                   >Partners</a
                 >
               </li>
               <li class="menu__items">
                 <a
                   class="menu__link"
-                  href="#"
+                  href="#blog"
                   >Blog</a
                 >
               </li>
               <li class="menu__items">
                 <a
                   class="menu__link"
-                  href="#"
+                  href="#contact"
                   >Contact</a
                 >
               </li>
@@ -76,14 +80,14 @@
           </nav>
           <a
             class="contact-us__link"
-            href="#"
+            href="#contact"
             >Contact us</a
           >
         </div>
       </div>
     </header>
-    <main class="main">
-      <section class="about">
+    <main id="main" class="main" tabindex="-1">
+      <section id="about" class="about">
         <div class="container-big">
           <div class="about__top">
             <h1 class="about__title">Agroton</h1>
@@ -102,14 +106,15 @@
                 <img
                   class="about__achievement-img"
                   src="./images/achievement-1.png"
-                  alt=""
+                  alt="Combine harvesting wheat"
                 />
-                <button class="about__achievement-arrow">
+                <span class="about__achievement-arrow" aria-hidden="true">
                   <img
                     src="./images/achievement-arrow.svg"
                     alt=""
+                    aria-hidden="true"
                   />
-                </button>
+                </span>
               </div>
               <div class="about__achievement-content">
                 <h4 class="about__achievement-title">
@@ -131,14 +136,15 @@
                 <img
                   class="about__achievement-img"
                   src="./images/achievement-2.png"
-                  alt=""
+                  alt="Broiler chickens in a poultry farm"
                 />
-                <button class="about__achievement-arrow">
+                <span class="about__achievement-arrow" aria-hidden="true">
                   <img
                     src="./images/achievement-arrow.svg"
                     alt=""
+                    aria-hidden="true"
                   />
-                </button>
+                </span>
               </div>
               <div class="about__achievement-content">
                 <h4 class="about__achievement-title">
@@ -223,7 +229,7 @@
           </div>
         </div>
       </section>
-      <section class="products">
+      <section id="products" class="products">
         <div class="container-big">
           <div class="products__wrapper">
             <div class="container">
@@ -235,14 +241,15 @@
                     href="#"
                     style="background-image: url('./images/product-1.png')"
                   >
-                    <h3 class="products__item-title">е Cereal crops</h3>
+                    <h3 class="products__item-title">Cereal crops</h3>
                     <p class="products__item-text">(wheat, barley, corn)</p>
-                    <button class="products__item-btn">
+                    <span class="products__item-btn" aria-hidden="true">
                       <img
                         src="./images/btn-arrow.svg"
                         alt=""
+                        aria-hidden="true"
                       />
-                    </button>
+                    </span>
                   </a>
                   <a
                     class="products__item"
@@ -251,12 +258,13 @@
                   >
                     <h3 class="products__item-title">🌻 Oilseeds</h3>
                     <p class="products__item-text">(sunflower, rapeseed, soybean)</p>
-                    <button class="products__item-btn">
+                    <span class="products__item-btn" aria-hidden="true">
                       <img
                         src="./images/btn-arrow.svg"
                         alt=""
+                        aria-hidden="true"
                       />
-                    </button>
+                    </span>
                   </a>
                   <a
                     class="products__item"
@@ -265,12 +273,13 @@
                   >
                     <h3 class="products__item-title">🥛 Dairy products</h3>
                     <p class="products__item-text">(milk, dairy products)</p>
-                    <button class="products__item-btn">
+                    <span class="products__item-btn" aria-hidden="true">
                       <img
                         src="./images/btn-arrow.svg"
                         alt=""
+                        aria-hidden="true"
                       />
-                    </button>
+                    </span>
                   </a>
                   <a
                     class="products__item"
@@ -279,12 +288,13 @@
                   >
                     <h3 class="products__item-title">🍞 Bakery products</h3>
                     <p class="products__item-text">(bread, pastries)</p>
-                    <button class="products__item-btn">
+                    <span class="products__item-btn" aria-hidden="true">
                       <img
                         src="./images/btn-arrow.svg"
                         alt=""
+                        aria-hidden="true"
                       />
-                    </button>
+                    </span>
                   </a>
                   <a
                     class="products__item"
@@ -293,12 +303,13 @@
                   >
                     <h3 class="products__item-title">🐔 Poultry farming</h3>
                     <p class="products__item-text">(chicken, eggs)</p>
-                    <button class="products__item-btn">
+                    <span class="products__item-btn" aria-hidden="true">
                       <img
                         src="./images/btn-arrow.svg"
                         alt=""
+                        aria-hidden="true"
                       />
-                    </button>
+                    </span>
                   </a>
                   <a
                     class="products__item"
@@ -307,12 +318,13 @@
                   >
                     <h3 class="products__item-title">🍏 Vegetables and fruits</h3>
                     <p class="products__item-text">(if available in production)</p>
-                    <button class="products__item-btn">
+                    <span class="products__item-btn" aria-hidden="true">
                       <img
                         src="./images/btn-arrow.svg"
                         alt=""
+                        aria-hidden="true"
                       />
-                    </button>
+                    </span>
                   </a>
                 </div>
                 <a
@@ -355,9 +367,10 @@
           class="slogan__img"
           src="./images/slogan-img.png"
           alt=""
+          aria-hidden="true"
         />
       </div>
-      <section class="partners">
+      <section id="partners" class="partners">
         <div class="container">
           <div class="partners__inner">
             <div class="partners__info">
@@ -422,7 +435,7 @@
           </div>
         </div>
       </section>
-      <section class="blog">
+      <section id="blog" class="blog">
         <div class="container-big">
           <div class="blog__wrapper">
             <div class="container">
@@ -494,7 +507,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer id="contact" class="footer">
       <div class="container">
         <div class="footer__top">
           <a
@@ -503,7 +516,7 @@
           >
             <img
               src="./images/logo-black.png"
-              alt=""
+              alt="Agroton"
             />
           </a>
           <div class="footer__element">
@@ -512,35 +525,35 @@
               <li class="footer__item">
                 <a
                   class="footer__link"
-                  href=""
+                  href="#about"
                   >About company</a
                 >
               </li>
               <li class="footer__item">
                 <a
                   class="footer__link"
-                  href=""
+                  href="#products"
                   >Products</a
                 >
               </li>
               <li class="footer__item">
                 <a
                   class="footer__link"
-                  href=""
+                  href="#partners"
                   >Partners</a
                 >
               </li>
               <li class="footer__item">
                 <a
                   class="footer__link"
-                  href=""
+                  href="#blog"
                   >Blog</a
                 >
               </li>
               <li class="footer__item">
                 <a
                   class="footer__link"
-                  href=""
+                  href="#contact"
                   >Contact</a
                 >
               </li>
@@ -552,7 +565,7 @@
               <li class="footer__item">
                 <a
                   class="footer__link"
-                  href=""
+                  href="#"
                   >Customer Support</a
                 >
               </li>
